@@ -32,5 +32,10 @@ func (*myHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 }
 
 func sayHello(w http.ResponseWriter, r *http.Request) {
+
 	io.WriteString(w, "Hello world, this is version 1")
+}
+
+func Tset(w http.ResponseWriter,r http.Request)  {
+
 }

@@ -9,8 +9,11 @@ import (
 	_"golang-demo/main/io"
 	_"golang-demo/main/basic"
 	_"fmt"
+	_"golang-demo/main/str"
+	_"golang-demo/main/web"
+	"golang-demo/main/socket"
 	"fmt"
-	"time"
+	"io/ioutil"
 )
 
 func main() {
@@ -44,14 +47,27 @@ func main() {
 	//basic.TestInput()
 	//basic.Testvmm()
 
-	c :=make(chan int)
+	//c :=make(chan int)
+	//
+	//go func() {
+	//
+	//	fmt.Println("execute routine")
+	//	time.Sleep(time.Second*5)
+	//	c <- 3
+	//}()
+	//
+	//fmt.Println("c",<-c)
+	//str.TestSliceStr()
+	//web.Index()
+	//socket.Listen()
+	con,err :=socket.GetConnet()
 
-	go func() {
+	if con.
+	result ,err :=ioutil.ReadAll(con)
+	if err!=nil{
+		fmt.Println("read error",result)
 
-		fmt.Println("execute routine")
-		time.Sleep(time.Second*5)
-		c <- 3
-	}()
+	}
+	fmt.Println("buffer",result)
 
-	fmt.Println("c",<-c)
 }
