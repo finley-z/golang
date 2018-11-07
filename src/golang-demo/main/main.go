@@ -11,9 +11,10 @@ import (
 	_"fmt"
 	_"golang-demo/main/str"
 	_"golang-demo/main/web"
-	"golang-demo/main/socket"
-	"fmt"
-	"io/ioutil"
+	_"golang-demo/main/socket"
+	_"fmt"
+	_"io/ioutil"
+	"golang-demo/main/web"
 )
 
 func main() {
@@ -58,16 +59,16 @@ func main() {
 	//
 	//fmt.Println("c",<-c)
 	//str.TestSliceStr()
-	//web.Index()
+	web.Index()
 	//socket.Listen()
-	con,err :=socket.GetConnet()
-
-	if con.
-	result ,err :=ioutil.ReadAll(con)
-	if err!=nil{
-		fmt.Println("read error",result)
-
-	}
-	fmt.Println("buffer",result)
+	//con,err :=socket.GetConnet()
+	//if err!=nil{
+	//	fmt.Println("open error",err)
+	//}
+	//result ,err :=ioutil.ReadAll(con)
+	//if err!=nil{
+	//	fmt.Println("read error",result)
+	//}
+	//fmt.Println("buffer",string(result))
 
 }

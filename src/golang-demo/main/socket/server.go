@@ -11,9 +11,13 @@ var servce *net.TCPAddr
 
 
 func Listen()  {
-	listener, err := net.ListenTCP("tcp", servce)
+	servce,err :=net.ResolveTCPAddr("tcp4",":9088")
 	if err!=nil{
 		fmt.Errorf("parse error")
+	}
+	listener, err:= net.ListenTCP("tcp", servce)
+	if err!=nil{
+		fmt.Errorf("listen error")
 	}
 	for {
 		conn, err := listener.Accept()
@@ -31,7 +35,6 @@ func Listen()  {
 
 func init()  {
 	var err error
-	raddr,err =net.ResolveTCPAddr("ip4","127.0.0.1:9088")
 	if err!=nil{
 		fmt.Errorf("parse error")
 	}
