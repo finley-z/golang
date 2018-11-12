@@ -10,7 +10,8 @@ import (
 	_"golang-demo/main/basic"
 	_"fmt"
 	"fmt"
-	"time"
+	_"time"
+	"flag"
 )
 
 func main() {
@@ -44,14 +45,21 @@ func main() {
 	//basic.TestInput()
 	//basic.Testvmm()
 
-	c :=make(chan int)
+	//c :=make(chan int)
+	//
+	//go func() {
+	//
+	//	fmt.Println("execute routine")
+	//	time.Sleep(time.Second*5)
+	//	c <- 3
+	//}()
+	//
+	//fmt.Println("c",<-c)
 
-	go func() {
 
-		fmt.Println("execute routine")
-		time.Sleep(time.Second*5)
-		c <- 3
-	}()
 
-	fmt.Println("c",<-c)
+	var location=flag.String("dir","/","logs dir")
+
+	flag.Parse()
+	fmt.Printf("the logs location is %v:",*location)
 }
