@@ -4,14 +4,13 @@ import (
 	_"time"
 	_"golang-demo/main/db"
 	_"golang-demo/main/web"
-	_"fmt"
 	_"time"
 	_"golang-demo/main/io"
 	_"golang-demo/main/basic"
-	"flag"
 	_"golang-demo/main/socket"
 	_"io/ioutil"
 	"golang-demo/main/web"
+	"flag"
 	"fmt"
 )
 
