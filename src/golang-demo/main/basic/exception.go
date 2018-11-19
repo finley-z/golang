@@ -18,7 +18,8 @@ func TestPanic()  {
 		}
 	}()
 
+	fmt.Println("do recover")
+
 	panic(errors.New("fatal error"))
 
-	fmt.Println("do recover")
 }

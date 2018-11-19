@@ -1,6 +1,15 @@
 package basic
 
-import "fmt"
+import (
+	"fmt"
+	_"net/http"
+)
+
+
+/**
+ 接口与方法
+*/
+
 
 type List []int
 

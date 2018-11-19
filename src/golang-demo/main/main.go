@@ -12,6 +12,7 @@ import (
 	"golang-demo/main/web"
 	"flag"
 	"fmt"
+	"golang-demo/main/basic"
 )
 
 func main() {

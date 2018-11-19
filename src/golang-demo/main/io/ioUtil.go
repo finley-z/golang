@@ -6,6 +6,12 @@ import (
 	"os"
 )
 
+/***
+  文件IO
+  1、文件创建、删除
+  2、文件属性获取
+  3、文件写入读取
+ */
 
 func ReadFiles(){
 	dir_list, e := ioutil.ReadDir("H:/JavaEE")

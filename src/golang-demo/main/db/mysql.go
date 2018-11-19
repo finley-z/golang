@@ -6,6 +6,14 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
+/**
+  数据库应用测试
+  1、数据库连接
+  2、增删改查
+  3、ORM映射
+ */
+
+
 func QueryTest() {
 	db, err := sql.Open("mysql", "root:529186@/test?charset=utf8")
 	CheckErr(err)
