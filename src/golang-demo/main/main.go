@@ -8,19 +8,11 @@ import (
 	_"time"
 	_"golang-demo/main/io"
 	_"golang-demo/main/basic"
-	_"fmt"
-<<<<<<< HEAD
-	"fmt"
-	_"time"
 	"flag"
-=======
-	_"golang-demo/main/str"
-	_"golang-demo/main/web"
 	_"golang-demo/main/socket"
-	_"fmt"
 	_"io/ioutil"
 	"golang-demo/main/web"
->>>>>>> 00caffa2aafb2de3db422fd539592518bef22cea
+	"fmt"
 )
 
 func main() {
@@ -64,7 +56,6 @@ func main() {
 	//}()
 	//
 	//fmt.Println("c",<-c)
-<<<<<<< HEAD
 
 
 
@@ -72,7 +63,6 @@ func main() {
 
 	flag.Parse()
 	fmt.Printf("the logs location is %v:",*location)
-=======
 	//str.TestSliceStr()
 	web.Index()
 	//socket.Listen()
@@ -86,5 +76,4 @@ func main() {
 	//}
 	//fmt.Println("buffer",string(result))
 
->>>>>>> 00caffa2aafb2de3db422fd539592518bef22cea
 }

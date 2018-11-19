@@ -4,6 +4,11 @@ import "fmt"
 import "errors"
 import "testing"
 
+
+/***
+数组相关语法与特性测试
+ */
+
 var arr [1*5]int =[1*5]int{0:2,2:3,1:4,3:5,4:5}
 var arqr =[...]int{2,3,4,5,5}
 var duowei [3][4]int=[3][4]int {}

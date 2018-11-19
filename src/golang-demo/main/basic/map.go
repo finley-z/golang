@@ -8,7 +8,10 @@ var names map[string] int=map[string] int {}
 
 
 var ids map[int]string =map[int]string {1:"igwgew",2:"r32t",32:"323"}
+var maps map[string] int=make(map[string]int,40)
+
 func TestMap()  {
+	
 	names["finley"]=124
 	names["edward"]=124
 	names["nick"]=124
@@ -17,4 +20,5 @@ func TestMap()  {
 	for i, num := range names {
 		fmt.Println("index:", i,"value:",num)
 	}
+
 }
