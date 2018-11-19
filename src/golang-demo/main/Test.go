@@ -1,7 +1,11 @@
 package main
 
-import "golang-demo/main/socket"
+import (
+	_"golang-demo/main/socket"
+	"golang-demo/main/basic"
+)
 
 func main()  {
-	socket.Listen()
+	//socket.Listen()
+	basic.TestSlice()
 }
