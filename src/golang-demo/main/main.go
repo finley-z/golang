@@ -59,10 +59,7 @@ func main() {
 
 
 
-	var location=flag.String("dir","/","logs dir")
 
-	flag.Parse()
-	fmt.Printf("the logs location is %v:",*location)
 	//str.TestSliceStr()
 	web.Index()
 	//socket.Listen()

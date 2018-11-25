@@ -1,6 +1,9 @@
 package basic
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 
 /***
@@ -41,6 +44,13 @@ func TestPrograma()  {
 	//var convertfv32 int64=int64(v32)
 	fmt.Println("convertf=",convertf)
 	fmt.Println("convertfv32=",int64(v32))
+
+
+	//数值类型与字符串间转换
+	strv:="21434"
+	intv,converr:=strconv.Atoi(strv)
+	fmt.Println("convert string to int =",intv,converr)
+
 
 	var sw int=44
 

@@ -2,9 +2,13 @@ package main
 
 import (
 	_"golang-demo/main/socket"
-	"golang-demo/main/basic"
+	_"golang-demo/main/basic"
 	_"runtime"
 	_"fmt"
+	_"golang-demo/main/io"
+
+	_"golang-demo/main/basic"
+	"golang-demo/main/db"
 )
 
 func main()  {
@@ -17,5 +21,12 @@ func main()  {
 	//basic.TestPrograma()
 	//basic.TestMap()
 	//basic.TestStruct()
-	basic.TestPanic()
+	//basic.TestPanic()
+	//basic.TestOs()
+	//io.ReadFileInfo()
+	//basic.TestFlag()
+	//basic.TestStr()
+
+db.InsertTest()
+
 }
