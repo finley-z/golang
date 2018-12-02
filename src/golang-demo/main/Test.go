@@ -8,7 +8,8 @@ import (
 	_"golang-demo/main/io"
 
 	_"golang-demo/main/basic"
-	"golang-demo/main/db"
+	_"golang-demo/main/db"
+	"golang-demo/main/basic"
 )
 
 func main()  {
@@ -26,7 +27,19 @@ func main()  {
 	//io.ReadFileInfo()
 	//basic.TestFlag()
 	//basic.TestStr()
+	//basic.TestTime()
+	//db.InsertTest()
+	//db.TestTrans()
 
-db.InsertTest()
+	//user := basic.UserInfo{1, "Allen.Wu", 25}
+	//
+	//basic.DoFiledAndMethod(user)
 
+	//basic.ParseToJSON(&user)
+	//basic.ConvertToObject("{\"Id\":1,\"Name\":\"finley.z\",\"Age\":25}")
+
+	//var val interface{}=23
+
+	//fmt.Println(val.(int))
+	basic.AssertType()
 }
