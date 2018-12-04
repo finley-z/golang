@@ -27,7 +27,7 @@ func Index(){
 }
 
 func toIndex(w http.ResponseWriter, r *http.Request) {
-	//t, _ := template.ParseFiles("template/view.html")
+	//t, _ := template.ParseFiles("template/footer.html")
 	//t.Execute(w, nil)
 	//f,err :=os.Open("D")
 	size :=r.FormValue("size")
@@ -43,12 +43,13 @@ func toIndex(w http.ResponseWriter, r *http.Request) {
 func register(w http.ResponseWriter, r *http.Request)  {
 	r.ParseForm()
 	if r.Method == "GET" {
-		t, err := template.ParseFiles("src/golang-demo/main/template/edit.html")
+		t, err := template.ParseFiles("D:/go/golang/src/golang-demo/main/template/edit.html","D:/go/golang/src/golang-demo/main/template/header.html","D:/go/golang/src/golang-demo/main/template/footer.html")
 		if err != nil {
 			fmt.Fprintf(w, "parse template error: %s", err.Error())
 			return
 		}
-		t.Execute(w, nil)
+		var data map[string]string=map[string]string{"name":"finley"}
+		t.Execute(w, data)
 	} else {
 		username := r.Form["username"]
 		password := r.Form["password"]

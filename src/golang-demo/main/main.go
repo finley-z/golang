@@ -10,9 +10,7 @@ import (
 	_"golang-demo/main/socket"
 	_"io/ioutil"
 	"golang-demo/main/web"
-	"flag"
-	"fmt"
-	"golang-demo/main/basic"
+
 )
 
 func main() {
