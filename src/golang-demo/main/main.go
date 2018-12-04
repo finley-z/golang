@@ -4,20 +4,15 @@ import (
 	_"time"
 	_"golang-demo/main/db"
 	_"golang-demo/main/web"
-	_"fmt"
 	_"time"
 	_"golang-demo/main/io"
 	_"golang-demo/main/basic"
-	_"fmt"
-	_"time"
-	"flag"
-	_"golang-demo/main/str"
-	_"golang-demo/main/web"
 	_"golang-demo/main/socket"
-	_"fmt"
 	_"io/ioutil"
 	"golang-demo/main/web"
+	"flag"
 	"fmt"
+	"golang-demo/main/basic"
 )
 
 func main() {
@@ -64,10 +59,7 @@ func main() {
 
 
 
-	var location=flag.String("dir","/","logs dir")
 
-	flag.Parse()
-	fmt.Printf("the logs location is %v:",*location)
 	//str.TestSliceStr()
 	web.Index()
 	//socket.Listen()

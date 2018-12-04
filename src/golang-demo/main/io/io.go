@@ -6,9 +6,15 @@ import (
 	"os"
 )
 
+/***
+  文件IO
+  1、文件创建、删除
+  2、文件属性获取
+  3、文件写入读取
+ */
 
 func ReadFiles(){
-	dir_list, e := ioutil.ReadDir("H:/JavaEE")
+	dir_list, e := ioutil.ReadDir("/Users/finley/Documents/")
 	if e != nil {
 		fmt.Println("read dir error")
 		return
@@ -30,12 +36,12 @@ func ReadFiles(){
 
 
 func ReadFileInfo(){
-	file, err := ioutil.ReadFile("H:/quote.log")
+	content, err := ioutil.ReadFile("/Users/finley/Documents/temp/baby/txt")
 	if err != nil {
 		fmt.Println("read error")
 		os.Exit(1)
 	}
-	fmt.Println(string(file))
+	fmt.Println(string(content))
 }
 
 func WriteFile(){
